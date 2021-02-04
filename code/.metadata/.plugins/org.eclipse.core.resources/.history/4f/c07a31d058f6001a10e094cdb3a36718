@@ -1,0 +1,21 @@
+package com.tedu.springmvc07_interceptor.controller;
+
+import org.springframework.stereotype.Component;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+//配置参数
+@Component //组件，作用像RestController,加上后框架会自动创建对象
+public class WebConfig implements WebMvcConfigurer{
+	//告诉框架，我们有那些拦截器
+	@Override
+	public void addInterceptors(InterceptorRegistry registry) {
+
+		TimeInterceptor timeInterceptor=new TimeInterceptor();
+		registry.addInterceptor(timeInterceptor)
+		.addPathPatterns("/**");
+		//pathPattens访问所有url都执行timeInterceptor
+		WebMvcConfigurer.super.addInterceptors(registry);
+	}
+
+}

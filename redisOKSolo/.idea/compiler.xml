@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="010-springboot-jsp" />
+        <module name="blibli-springboot003-web" />
+        <module name="008-springboot-custom" />
+        <module name="blibli-springboot-yaml" />
+        <module name="testss" />
+        <module name="002-spingboot-springmvc" />
+        <module name="004-spingboot-application1" />
+        <module name="001-sprinboot-first" />
+        <module name="003-spingboot-context-path" />
+        <module name="004-springboot-properties-yam" />
+        <module name="006-springboot-environment" />
+        <module name="009-springboot-cosfiguration" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="001-sprinboot-first" target="1.8" />
+      <module name="001-springboot" target="1.8" />
+      <module name="002-spingboot-springmvc" target="1.8" />
+      <module name="003-spingboot-context-path" target="1.8" />
+      <module name="004-spingboot-application1" target="1.8" />
+      <module name="004-springboot-properties-yam" target="1.8" />
+      <module name="006-springboot-environment" target="1.8" />
+      <module name="008-springboot-custom" target="1.8" />
+      <module name="009-springboot-cosfiguration" target="1.8" />
+      <module name="010-springboot-jsp" target="1.8" />
+      <module name="blibli-springboot-yaml" target="1.8" />
+      <module name="blibli-springboot003-web" target="1.8" />
+      <module name="springboot01" target="1.8" />
+      <module name="testss" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="001-sprinboot-first" options="-parameters" />
+      <module name="001-springboot" options="-parameters" />
+      <module name="002-spingboot-springmvc" options="-parameters" />
+      <module name="003-spingboot-context-path" options="-parameters" />
+      <module name="004-spingboot-application1" options="-parameters" />
+      <module name="004-springboot-properties-yam" options="-parameters" />
+      <module name="006-springboot-environment" options="-parameters" />
+      <module name="008-springboot-custom" options="-parameters" />
+      <module name="009-springboot-cosfiguration" options="-parameters" />
+      <module name="010-springboot-jsp" options="-parameters" />
+      <module name="blibli-springboot-yaml" options="-parameters" />
+      <module name="blibli-springboot003-web" options="-parameters" />
+      <module name="springboot01" options="-parameters" />
+      <module name="testss" options="-parameters" />
+    </option>
+  </component>
+</project>

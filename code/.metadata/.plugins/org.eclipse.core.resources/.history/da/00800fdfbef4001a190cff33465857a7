@@ -1,0 +1,18 @@
+package com.tedu.springmvc01_base.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class UserController {
+	@RequestMapping("/register1")
+	//http://localhost:1314/register1?username=admin&password=root
+	//get请求  url?参数名称=值&参数名称=值&参数名称=值
+	//src/main/java/*Application run as 
+	//console 显示 tomcat started on port 1314
+	public String register1(String username,String password) {
+		return "username="+username+",password="+password;
+	}
+
+	//给方法传参数，参数很多。创建一个类
+}

@@ -1,0 +1,13 @@
+package org.springmvc;
+//springmvc的入口类
+
+import java.util.HashMap;
+
+public class AppMain {
+//  /register  ,controllerDefinition[url,UserController,register]
+	public static void main(String[] args) {
+		
+
+	}
+
+}

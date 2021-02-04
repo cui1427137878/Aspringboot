@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div id="app"></div>
+</body>
+<script type="text/javascript"
+src="../js/vue.js"></script>
+
+<script type="text/javascript"
+src="../js/axios.min.js"></script>
+
+<script type="text/javascript">
+var options={
+el:"#app",
+mounted:function(){
+	var url="/api/getIndexItem";
+	//联网成功后，自动执行then中的函数
+	//联网失败后，自动执行catch中的函数
+	axios.get(url)
+	.then(function (response){
+		console.log(response);
+		//response有6个对象 config,data,header,request,status,statesText
+		//data是服务器controller返回的数据，另外5个对象是axios框架自己加的。
+		//status是http协议状态码 200:成功 404:url不存在
+		var serverData=response.data;
+		//serverData有3个属性，分别是status,msg,data
+		var items=serverData.data;
+		for (var i=0;i<items.length;i++)
+			{
+			console.log(items[i]);
+			}
+	})
+	.catch(function(error)
+	{
+		console.log("联网失败了");
+		console.log(error);
+	}		
+	);
+}
+};
+var vue=new Vue(options);
+</script>
+
+
+
+</html>

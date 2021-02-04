@@ -1,0 +1,5 @@
+package com.tedu.mybatis02_multiTable.controller;
+
+public class CategoryController {
+
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <!--
+    1，遍历所有的input
+    2,判断有$ref属性，取到属性值
+    3,vue中有一个对象$refs,能$refs添加一个属性title
+    4,取到input中的内容，赋值给$refs.title.value=item3
+    后端：把值放到spring容器中，从spring容器中取值
+    前端：把input中的内容放到$refs,从$refs中取值。
+    -->
+    <input ref="title">
+    <button @click="insert">insert</button>
+  <!--items就是options.data中的items,
+  框架会自动到options.data中找items-->
+    <div v-for="item in items">
+      <span>{{item.title}}</span>
+        <span @click="remove(item.title)">删除</span>
+  </div>
+</div>
+</body>
+<script type="text/javascript"
+src="vue.js"
+></script>
+<script type="text/javascript">
+    //js能给一个对象动态添加属性
+    window.itemTitle=new Object();
+    window.itemTitle.value="item1";
+    console.log(window.itemTitle.value);
+
+    var myArray=["a","b","c"];
+    myArray.splice(1,1);
+    myArray.splice(1,1);
+    var options={
+        "el":"#app",
+        "data":{
+            "items":[
+                {"title":"item1"},
+                {"title":"item2"}
+            ]
+        },
+        "methods":{
+            "insert":function () {
+              var itemTitle=this.$refs.title.value;
+              var item={"title":itemTitle};
+              this.items.push(item);
+            },
+            "remove":function (title) {
+                console.log("remove");
+                //遍历items,判断商品位置
+                for (var i=0;i<this.items.length;i++)
+                {
+                    var item=this.items[i];
+                    if (item.title==title)
+                    {
+                        //要删除的商品
+                        this.items.splice(i,1);
+                    }
+                }
+            }
+        }
+    }
+    var vue=new Vue(options);
+</script>
+</html>

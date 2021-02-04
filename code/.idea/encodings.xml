@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/CGBMYBATIS01" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SocketServer/src/SocketServer.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/generator" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javaThreadDownloader/src/cn/ict/download/MulThreadDownloader.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jt-mall" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nettyWebServer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pd-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/socketCreateHttpRequest/src/SimpleHttpClient.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/spi-dbframework" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spi-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spi-springframework" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-mybatis0821" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-project0821" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-ssm" charset="UTF-8" />
+  </component>
+</project>

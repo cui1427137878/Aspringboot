@@ -1,0 +1,29 @@
+package com.tedu.springmvc06_session.controller;
+
+import java.util.ArrayList;
+
+import javax.servlet.http.HttpSession;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class CartController {
+	//添加商品
+	public String insert(String itemName,HttpSession session) {
+		//session相当于数据库，保存信息,内部用的是hashmap
+		//从session中拿信息
+		ArrayList<String> cart=(ArrayList<String>) 
+				session.getAttribute("cart");
+		//第一次访问，得到cart是null
+		if (cart==null) {
+			cart=new ArrayList<String>();
+			//把cart放到session
+			session.setAttribute("cart", cart);			
+		}
+		//把商品放到购物车
+		cart.add(itemName);
+		return "添加成功";
+	}
+	//显示商品
+
+}

@@ -1,0 +1,4 @@
+[D:\zhangjiujun\teach\cgb\javaAct\09spring\spring-ioc2005\bin\com\tedu\mall\RunApp.class,
+ D:\zhangjiujun\teach\cgb\javaAct\09spring\spring-ioc2005\bin\com\tedu\mall\UserController.class,
+  D:\zhangjiujun\teach\cgb\javaAct\09spring\spring-ioc2005\bin\com\tedu\mall\UserService.class, 
+  D:\zhangjiujun\teach\cgb\javaAct\09spring\spring-ioc2005\bin\com\tedu\mall\UserServiceImpl.class]

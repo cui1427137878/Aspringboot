@@ -1,0 +1,54 @@
+package com.tedu.springmvc06_session.controller;
+
+import java.util.ArrayList;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class CartController {
+	//添加商品
+	@RequestMapping("/insert")
+	public String insert(String itemName,HttpSession session) {
+		//session相当于数据库，保存信息,内部用的是hashmap
+		//从session中拿信息
+		ArrayList<String> cart=(ArrayList<String>) 
+				session.getAttribute("cart");
+		//第一次访问，得到cart是null
+		if (cart==null) {
+			cart=new ArrayList<String>();
+			//把cart放到session
+			session.setAttribute("cart", cart);			
+		}
+		//把商品放到购物车
+		cart.add(itemName);
+		return "添加成功";
+	}
+	//显示商品
+	@RequestMapping("/list")
+	public String list(HttpServletRequest request,
+			HttpSession session) {
+		//从session中取购物车
+		//session:hashmap
+		// 769:[cart:list]
+		//getAttribute{requst.getCookie()得到769,根据769得到haspmap}
+		//hashmap.get(cart)
+		ArrayList<String> cart=(ArrayList<String>) 
+				session.getAttribute("cart");
+		String string="";
+		for (String itemName:cart) {
+			string=string+itemName;
+		}
+		return string;		
+	}
+	//点console中的红色按钮，关闭以前的程序,启动sprmvc06SesssionApplication
+	//localhost:1314/insert?itemName=手机
+	//localhost:1314/insert?itemName=电脑
+	
+	//localhost:1314/list
+	//再启动一个浏览器，直接访问localhost:1314/list 报500
+
+}

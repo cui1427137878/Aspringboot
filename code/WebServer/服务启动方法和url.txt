@@ -1,0 +1,15 @@
+﻿jdk版本要求是1.8
+
+java  -Dfile.encoding=utf-8 -jar webServer.jar --server.port=82
+
+网页url http://localhost:82/storeIndex.html
+
+http://localhost:82/api/register?username=5&password=a
+http://localhost:82/api/login?username=5&password=a
+
+http://localhost:82/api/getIndexItem
+http://localhost:82/images/mobileImage/02.png
+
+
+http://localhost:82/api/getItemDetail?itemId=830972
+

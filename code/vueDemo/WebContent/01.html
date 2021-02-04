@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript" src="vue.js"></script>
+
+</head>
+<body>
+	<div id="app">
+		<input>
+		<button>insert</button>
+		<div v-for="item in items">
+			{{item.title}} <span @click="remove(item.title)">删除</span>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	//1,创建配置对象
+	var options = {
+		el : "#app",
+		methods : {
+			remove : function(title) {
+				console.log("remove title=" + title);
+			}
+		},
+		data : {
+			items : [ {
+				title : "手机"
+			}, {
+				title : "笔记本"
+			} ]
+
+		}
+	}
+	//2,启动vue
+	var vue = new Vue(options);
+</script>
+</html>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../aop-asped/aop-asped.iml" filepath="$PROJECT_DIR$/../aop-asped/aop-asped.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-aop.iml" filepath="$PROJECT_DIR$/java-aop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../jj/jj.iml" filepath="$PROJECT_DIR$/../../jj/jj.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../springbootproject/springboot-login/springboot-login.iml" filepath="$PROJECT_DIR$/../springbootproject/springboot-login/springboot-login.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../springmybatis/springmybatis.iml" filepath="$PROJECT_DIR$/../springmybatis/springmybatis.iml" />
+    </modules>
+  </component>
+</project>

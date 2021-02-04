@@ -1,0 +1,5 @@
+package com.tedu.springaop06_aop.service;
+
+public class TimeAspect {
+
+}

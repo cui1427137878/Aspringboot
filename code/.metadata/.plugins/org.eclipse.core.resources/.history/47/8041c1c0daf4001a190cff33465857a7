@@ -1,0 +1,14 @@
+package org.springmvc;
+//放url,类名，方法名
+public class ControllerDefinition {
+	String url;//不加，也行
+	String className;
+	String methodName;
+	public ControllerDefinition(String url, String className, String methodName) {
+		super();
+		this.url = url;
+		this.className = className;
+		this.methodName = methodName;
+	}
+	
+}

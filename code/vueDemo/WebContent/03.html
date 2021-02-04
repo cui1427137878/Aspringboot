@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript" src="vue.js"></script>
+
+</head>
+<body>
+	<div id="app">
+		<input ref="itemTitle">
+		<button v-on:click="insert">insert</button>
+		<div v-for="item in items">
+			{{item.title}} <span @click="remove(item.title)">删除</span>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	//1,创建配置对象
+	var options = {
+		el : "#app",
+		methods : {
+			insert:function(){
+				//取input中的内容
+				var itemTitle=this.$refs.itemTitle.value;
+				//创建item对象
+				var item={title:itemTitle}
+				//把item对象放到items
+				this.items.push(item);
+			},
+			remove : function(title) {
+				console.log("remove title=" + title);
+				//拿title与数组中的每件商品比较，相等，删除
+				for (var i=0;i<this.items.length;i++)
+					{
+					var itemTitle=this.items[i].title;
+					if (itemTitle==title)
+						{
+						this.items.splice(i,1);
+						}
+					}
+			}
+		},
+		data : {
+			items : [ {
+				title : "手机"
+			}, {
+				title : "笔记本"
+			} ]
+
+		}
+	}
+	//2,启动vue
+	var vue = new Vue(options);
+</script>
+</html>

@@ -1,0 +1,32 @@
+-------------------------------------------------------------------------------
+Test set: MyTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 1.34 s <<< FAILURE! - in MyTest
+test02(MyTest)  Time elapsed: 0.411 s  <<< ERROR!
+org.springframework.dao.DuplicateKeyException: 
+
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2888' for key 'PRIMARY'
+### The error may exist in class path resource [StudentDao.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: insert into student values(?,?,?,?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2888' for key 'PRIMARY'
+; Duplicate entry '2888' for key 'PRIMARY'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2888' for key 'PRIMARY'
+	at MyTest.test02(MyTest.java:38)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2888' for key 'PRIMARY'
+	at MyTest.test02(MyTest.java:38)
+
+test03(MyTest)  Time elapsed: 0.065 s  <<< ERROR!
+org.springframework.dao.DuplicateKeyException: 
+
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '167' for key 'PRIMARY'
+### The error may exist in class path resource [StudentDao.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: insert into student values(?,?,?,?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '167' for key 'PRIMARY'
+; Duplicate entry '167' for key 'PRIMARY'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '167' for key 'PRIMARY'
+	at MyTest.test03(MyTest.java:47)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '167' for key 'PRIMARY'
+	at MyTest.test03(MyTest.java:47)
+

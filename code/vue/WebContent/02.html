@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div id="app"></div>
+
+</body>
+<script type="text/javascript">
+//框架
+//options
+function Vue(options)
+{
+	//找到根标签的id
+	var rootElementId=options.el;
+	//根据id 找到对象
+	var rootObject=document.getElementById(rootElementId);
+	//从配置对象option中找到数据
+	var title=options.data.item.title;
+	//把数据显示在根标签上
+	rootObject.innerHTML=title;
+	}
+
+//---------------------------
+
+//程序用框架
+var options={
+		el:"app",
+		data:{
+			item:{
+				title:"手机",
+				price:8000
+			},
+			user:{}
+		}
+}
+//启动框架
+var vue=new Vue(options);
+
+</script>
+</html>

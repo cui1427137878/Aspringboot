@@ -1,0 +1,25 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace的值是接口所在的包名+.接口名 -->
+<mapper
+	namespace="com.tedu.mybatis02_multiTable.mapper.CategoryMapper">
+	<!-- 1,结果集和类的映射 -->
+	<resultMap type="com.tedu.mybatis02_multiTable.pojo.Category"
+		id="categoryMap">
+		<result column="category_id" property="categoryId" />
+		<result column="category_name" property="categoryName" />
+		<!-- 一个分类下有多个商品 -->
+		<collection property="itemList"
+			ofType="com.tedu.mybatis02_multiTable.pojo.Item">
+			<result column="item_name" property="itemName"/>
+		</collection>
+	</resultMap>
+	<!-- id必须和方法名一致 -->
+	<select id="selectCategory" resultMap="categoryMap"
+	 parameterType="Integer">
+	 select category.category_id,category_name,item_name
+from category,item
+where category.category_id=#{categoryId}
+and item.category_id=category.category_id
+	</select>
+
+</mapper>

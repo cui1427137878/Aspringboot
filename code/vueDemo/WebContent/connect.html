@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="vue.js"></script>
+
+<script type="text/javascript" src="axios.min.js"></script>
+</head>
+<body>
+	<div id="app"></div>
+</body>
+<script type="text/javascript">
+//创建配置对象
+var options={
+		el:"#app",
+		mounted:function()
+		{
+			console.log("run");
+			var url="http://127.0.0.1:82/api/getIndexItem";
+			//联网成功后执行then中的函数
+			//联网失败后执行catch中的函数
+			axios.get(url)
+			.then(function(response){
+				console.log("联网成功");
+				console.log(response);
+				//response有6个属性，data放的是服务器端返回的数据
+				var serverData=response.data;
+				//serverData有3个属性，分别是status,msg,data
+				//sererData.data放的是items
+				var items=serverData.data;
+				console.log("商品数据");
+				console.log(items);
+			})
+			.catch(function(e){
+				console.log("联网失败");
+				console.log(e);
+			});
+		}
+}
+//启动vue
+var vue=new Vue(options);
+
+</script>
+</html>
+

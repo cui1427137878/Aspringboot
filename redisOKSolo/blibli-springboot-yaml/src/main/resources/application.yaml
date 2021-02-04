@@ -1,0 +1,14 @@
+
+person:
+  name: qinqiang
+  age: 30
+  date: 2019/11/09
+  maps: {k1: aaa,k2: bbb}
+  list:
+    - code
+    - music
+    - girk
+
+  dog:
+    name: 旺财
+    age: 3

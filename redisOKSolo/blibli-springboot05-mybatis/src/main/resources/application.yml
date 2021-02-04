@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/a?allowMultiQueries=true&useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+mybatis:
+  type-aliases-package: com.tedu.pojo
+  mapper-locations: classpath:mybatis/mapper/*.xml

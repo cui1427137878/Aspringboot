@@ -1,0 +1,5 @@
+package com.tedu.springmvc07_interceptor.controller;
+
+public class TimeInterceptor {
+
+}

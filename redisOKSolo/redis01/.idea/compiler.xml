@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="solor02-lucene" />
+        <module name="dubbo_zookeeper_provider" />
+        <module name="redis01" />
+        <module name="dubbo_zookeeper_consumer" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="dubbo_zookeeper" target="1.5" />
+      <module name="dubbo_zookeeper_consumer" target="1.8" />
+      <module name="dubbo_zookeeper_provider" target="1.8" />
+      <module name="redis01" target="1.8" />
+      <module name="solor02-lucene" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="dubbo_zookeeper_consumer" options="-parameters" />
+      <module name="dubbo_zookeeper_provider" options="-parameters" />
+      <module name="redis01" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,33 @@
+<!-- 从讲义9.1.1.8拷贝过来 -->
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace的值是接口的全名称，包含包名和接口名 -->
+<mapper
+	namespace="com.tedu.mybatis02_multiTable.mapper.JTOrderMapper">
+	<!-- 2,手动映射 -->
+	<resultMap type="com.tedu.mybatis02_multiTable.pojo.JTOrder"
+		id="jtOrderMap">
+		<!-- ctrl+shift+/ 设置结果集中的列的值放到类的那个属性上 -->
+		<result column="order_id" property="orderId" />
+		<!--设置username列的值放到JtOrder.user对象的username属性中 -->
+		<association property="user"
+			javaType="com.tedu.mybatis02_multiTable.pojo.User">
+			<result column="username" property="username"/>
+			</association>
+	</resultMap>
+	<!-- 1,写sql语句 -->
+	<!-- select标签表示里面放的是查询语句 
+	id要和接口中的方法名一样
+	parameterType要和方法的参数的类型一样
+	resultMap指定结果集如何映射
+	sql语句在讲义的9.1.1.1中
+	#{orderId}：#{}是占位符
+	-->
+	<select id="select" parameterType="Integer" resultMap="jtOrderMap">
+	SELECT order_id,jt_order.user_id,username
+ FROM jt_order,USER 
+WHERE jt_order.order_id=#{orderId}
+AND user.user_id=jt_order.user_id
+	</select>
+</mapper>
+
+

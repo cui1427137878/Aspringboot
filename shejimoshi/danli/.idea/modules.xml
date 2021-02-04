@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/danli.iml" filepath="$PROJECT_DIR$/danli.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../gongchang/gongchang.iml" filepath="$PROJECT_DIR$/../gongchang/gongchang.iml" />
+    </modules>
+  </component>
+</project>

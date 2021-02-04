@@ -1,0 +1,5 @@
+package com.tedu.sp02_mail.controller;
+
+public class MailController {
+
+}

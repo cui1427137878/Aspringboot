@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+div {
+	float: left;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+	.col-xs-12 {
+		width: 100%;
+	}
+	.col-xs-6 {
+		width: 50%;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+	.col-sm-12 {
+		width: 100%;
+	}
+	.col-sm-6 {
+		width: 50%;
+	}
+}
+</style>
+</head>
+<body>
+	<div class="col-xs-12 col-sm-6">div1</div>
+	<div class="col-xs-12 col-sm-6">div2</div>
+
+</body>
+</html>

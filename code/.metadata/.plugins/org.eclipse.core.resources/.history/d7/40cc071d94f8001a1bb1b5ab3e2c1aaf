@@ -1,0 +1,15 @@
+package com.tedu.springaop06_aop.service;
+
+import org.aspectj.lang.annotation.Aspect;
+import org.springframework.stereotype.Component;
+
+//切面类:执行扩展功能，实现无侵入式编码
+@Component//组件，与@controller,@service功能一样，框架会自动创建对象
+@Aspect//这个类是个切面，在执行业务层方法之前或之后执行切面
+public class TimeAspect {
+long startTime;//业务层方法开始时间
+//切面像springmvc中的interceptor
+//.pathPattern(/order,/cart)
+//设置在运行那些业务层类时执行TimeAspect
+public void aopPointCut() {}
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\zhangjiujun\teach\cgb\springbootSSMVue\code\sp03_sms"/>
+			<item value="D:\zhangjiujun\teach\cgb\springbootSSMVue\code\sp02_mail"/>
+			<item value="D:\zhangjiujun\teach\cgb\springbootSSMVue\code\sp01_test"/>
+			<item value="D:\classproject\2007code3\springaop05_aopFramework"/>
+			<item value="D:\zhangjiujun\teach\cgb\springbootSSMVue\code\springioc02_framework"/>
+			<item value="D:\temp\jtmall"/>
+			<item value="D:\classproject\2007code3\metaSpace"/>
+			<item value="D:\classproject\2007code3\dynaimProxy1911"/>
+			<item value="D:\classproject\pd-web源代码"/>
+			<item value="D:\classproject\2007code3\springmvc03_framework"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+		</list>
+	</section>
+</section>

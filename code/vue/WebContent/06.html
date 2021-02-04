@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!--id,class是标准属性，由浏览器处理
+@click属性不是标准属性，浏览器不处理，由Vue框架来处理
+  -->
+<button id="delete" class="button" @click="deleteTest">delete</button>
+</body>
+<script type="text/javascript">
+//框架代码
+function Vue(options)
+{
+	//找到所有button,buttons是个数组
+	var buttons=document.getElementsByTagName("button");
+	//处理每个button
+	for (var i=0;i<buttons.length;i++)
+		{
+		//找到一个button的所有属性
+		var button=buttons[i];
+		//attributes是个数组
+		var attributes=button.attributes;
+		//处理每个属性
+		for (var k=0;k<attributes.length;k++)
+			{
+			var attribute=attributes[k];
+			//取到属性名
+			var name=attribute.name;
+			//判断属性名是不是@click,如果是完成事件绑定
+			if (name=="@click")
+				{
+				button.onclick=options.deleteTest;
+				}
+			}
+		
+		}
+	
+	
+	
+	}
+//-------------------------------
+//程序员用框架
+var options={
+		deleteTest:function (){
+			console.log("run")
+		}
+}
+var vue=new Vue(options);
+</script>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="vue.js"></script>
+<script type="text/javascript" src="axios.min.js"></script>
+</head>
+<body>
+	<div id="app">
+		<input v-model="categoryName">
+		<button v-on:click="insert">添加</button>
+		
+		
+	<!-- 遍历data中的categoryList -->
+		<div v-for="category in categoryList">
+			{{category.categoryName}} 
+			<span v-on:click="remove(category.categoryId)">删除</span>
+		</div>
+	
+	</div>
+</body>
+<script type="text/javascript">
+//1,创建配置对象
+var config={
+		el:"#app",
+		data:{
+			categoryList:[],
+			categoryName:"在这里输入名称"
+		},
+		methods:{
+			remove:function(categoryId){
+				debugger;
+				var serverUrl="/cat/delete?categoryId="+categoryId;
+				axios.get(serverUrl)
+				.then(function(res){
+					debugger;
+					var result=res.data;
+					window.alert(result);
+					//调用select()重新查询
+					this.select();
+				})
+				.catch();
+			},
+			insert:function(){
+				debugger;
+				//从data中取值
+				var categoryName=this.categoryName;
+				var serverUrl="/cat/insertJson";
+				//以前发的是get
+				//用post发一个json对象给服务器
+				var data={"categoryName":categoryName}//json对象
+				axios.post(serverUrl,data)
+				.then(function(res){
+					debugger;
+					var result=res.data;
+					window.alert(result);
+					//调用select();
+					this.select();
+				})
+				.catch();
+			},
+			select:function(){
+				//1,设置服务器url
+				var serverUrl="/cat/select";
+				//2,发请求
+				axios.get(serverUrl)
+				.then(function(res){
+					//debugger;
+					var result=res.data;
+					//3,接收数据，赋值给data中的变量
+					this.vue.categoryList=result;
+				})
+				.catch();
+			}
+		},
+		mounted:function(){
+			//debugger;
+			//mounted由vue框架自动调用
+			this.select();
+			
+		}
+}
+//2,启动vue框架
+var vue=new Vue(config);
+</script>
+</html>

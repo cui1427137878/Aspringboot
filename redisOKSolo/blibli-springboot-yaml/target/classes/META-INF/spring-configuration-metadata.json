@@ -1,0 +1,42 @@
+{
+  "groups": [
+    {
+      "name": "person",
+      "type": "com.tedu.bliblispringbootyaml.pojo.Person",
+      "sourceType": "com.tedu.bliblispringbootyaml.pojo.Person"
+    }
+  ],
+  "properties": [
+    {
+      "name": "person.age",
+      "type": "java.lang.String",
+      "sourceType": "com.tedu.bliblispringbootyaml.pojo.Person"
+    },
+    {
+      "name": "person.date",
+      "type": "java.util.Date",
+      "sourceType": "com.tedu.bliblispringbootyaml.pojo.Person"
+    },
+    {
+      "name": "person.dog",
+      "type": "com.tedu.bliblispringbootyaml.pojo.Dog",
+      "sourceType": "com.tedu.bliblispringbootyaml.pojo.Person"
+    },
+    {
+      "name": "person.list",
+      "type": "java.util.List<java.lang.Object>",
+      "sourceType": "com.tedu.bliblispringbootyaml.pojo.Person"
+    },
+    {
+      "name": "person.maps",
+      "type": "java.util.Map<java.lang.String,java.lang.Object>",
+      "sourceType": "com.tedu.bliblispringbootyaml.pojo.Person"
+    },
+    {
+      "name": "person.name",
+      "type": "java.lang.String",
+      "sourceType": "com.tedu.bliblispringbootyaml.pojo.Person"
+    }
+  ],
+  "hints": []
+}

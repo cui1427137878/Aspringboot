@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="vue.js"></script>
+<script type="text/javascript" src="axios.min.js"></script>
+</head>
+<body>
+	<div id="app">
+		<h1>后台管理系统</h1>
+		<!-- vue中有个data,在data中定义insertItemName -->
+		<input v-model="insertItemName">
+		<button v-on:click="insert">添加</button>
+		<br>
+		<table border="2" width="50%">
+		<tr>
+			<td>商品名称</td>  <td>删除</td> <td>修改</td>
+		</tr>
+		<tr v-for="itemName in itemList">
+		<!-- F12打开调试器,F5 到console看一下有没有错误 -->
+			<td>{{itemName}}</td> 
+			<td v-on:click="remove(itemName)">删除</td> 
+			<td>
+			<!-- v-bind:href href属性由vue来处理
+			表达式='字符串'+变量itemName
+			 -->
+			<a v-bind:href="'update.html?oldItemName='+itemName">
+			修改
+			</a>
+			</td>
+		</tr>
+		</table>
+	</div>
+</body>
+<script type="text/javascript">
+var config={
+		el:"#app",
+		data:{
+			insertItemName:"请在这里输入商品名称",
+			itemList:[]
+		},
+		mounted:function(){
+			debugger;
+			//this代表的是vue
+			this.selectAll();
+			//localhost:1314/admin.html F12
+			//看一下console有没有错
+			//F5刷新 
+		},
+		methods:{
+			remove:function(itemName){
+				debugger;
+				var serverUrl="/delete?itemName="+itemName;
+				axios.get(serverUrl)
+				.then(function(res){
+					debugger;
+					window.alert(res.data);
+					//删除后，要重新查询
+					this.vue.selectAll();
+				})
+				.catch();
+			},
+			selectAll:function(){
+				debugger;
+				var serverUrl="/select";
+				axios.get(serverUrl)
+				.then(function(res){
+					debugger;
+					var result=res.data;//商品集合
+					//this代表的是window
+					this.vue.itemList=result;
+				})
+				.catch();
+			},
+			insert:function(){
+				debugger;
+				//在js中this代表不同的对象
+				//在联网成功后then函数 this代表的是window赋值用this.vue
+				//this代表的是vue
+				window.alert(this.insertItemName);
+				var serverUrl="/insert?itemName="+this.insertItemName;
+				axios.get(serverUrl)
+				.then(function(response){
+					debugger;
+					//取服务器controller返回的内容
+					var result=response.data;
+					window.alert(result);
+					//添加成功后，要显示新的数据
+					this.vue.selectAll();
+				})
+				.catch(function(e){
+					debugger;
+					window.alert(e);
+				});
+			}
+		}
+}
+//启动vue
+var vue=new Vue(config);
+</script>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 在src/main/resources/static文件夹中创建login.html -->
+<!-- 登录界面   action指定接收程序-->
+<form action="/login">
+<input name="username">
+<input type="submit" value="登录">
+</form>
+</body>
+</html>

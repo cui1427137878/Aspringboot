@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<select id="com.tedu.UserMapper.findAll"
+resultType="com.tedu.User"
+>
+select * from user
+</select>

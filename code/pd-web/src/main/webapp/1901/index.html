@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="../css/bootstrap.css"
+rel="stylesheet"
+type="text/css"
+/>
+</head>
+<body>
+<div class="container" id="app">
+   <div class="row">
+       <div class="col-xs-12">
+       <!-- img-responsive 是响应式图片，随着窗口的变化而变化 -->
+           <img 
+           class="img-responsive"
+           src="../images/mobileImage/banner.png"/>
+       </div>
+   </div>
+   <div class="row">
+      <div class="col-xs-12 col-sm-6"
+      v-for="item in items"
+      >
+      <!-- 浏览器不处理 v-bind:href，vue处理-->
+      <a v-bind:href="item.detailUrl">
+      <img v-bind:src="item.image"/>
+      <br/>
+      <span>{{item.title}}</span>
+      <br/>
+      <span>{{item.price}}</span>
+      </a>
+      </div>
+   </div>
+</div>
+</body>
+<script type="text/javascript"
+src="../js/vue.js">
+</script>
+
+<script type="text/javascript"
+src="../js/axios.min.js">
+</script>
+<script type="text/javascript">
+var options={
+		el:"#app",
+		mounted:function(){
+			//联网取商品数据
+			var url="/api/getIndexItem";
+			axios.get(url)
+			.then(function (response){
+				var serverData=response.data;
+				var items=serverData.data;
+				//每个item中没有detailUrl
+				//动态给对象添加新的属性
+				for (var i=0;i<items.length;i++)
+					{
+					var item=items[i];
+					item.detailUrl="detail.html?itemId="
+							+item.id;
+					//从数组中取一个对象，取的是对象的地址
+					//items[i]=item;
+					}
+				//数据绑定的数组必须在data中申明
+				this.vue.items=items;
+			})
+			.catch();
+		},
+		data:{
+			items:[
+			       {title:"item1"},
+			       {title:"item2"}
+			       ]
+		}
+}
+var vue=new Vue(options);
+</script>
+</html>
+
+

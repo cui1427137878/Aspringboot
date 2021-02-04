@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5b1fb5d7-ef1c-4197-bc2a-5d6f478edd1a" name="Default" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="FxmlFile" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>thyme</find>
+      <find>free</find>
+      <find>messageCodesResolverFormat</find>
+      <find>WebBinding</find>
+      <find>ContentNegotiatingViewResolver</find>
+      <find>MessageCodesResolver</find>
+      <find>ConfigurableWebBindingInitializer</find>
+      <find>HttpMessageConverters</find>
+      <find>getSelfInitializer</find>
+      <find>getResources</find>
+      <find>getMatchOutcomeForBasename</find>
+      <find>REDIRECT_URL_PREFIX</find>
+      <find>FORWARD_URL_PREFIX</find>
+      <find>getErrorAttributes</find>
+      <find>EmbeddedServletContainerCustomizer</find>
+      <find>DEFAULT_CONTEXT_CLASS</find>
+      <find>webEnvironment</find>
+      <find>DEFAULT_WEB_CONTEXT_CLASS</find>
+    </findStrings>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\repository" />
+        <option name="mavenHome" value="E:\idea\IntelliJ IDEA 2020.2\plugins\maven\lib\maven3" />
+        <option name="userSettingsFile" value="F:\qq接受\Maven\apache-maven-3.3.9\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="vmOptions" value="-Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true" />
+  </component>
+  <component name="ProjectId" id="1kE7AHttisHfz6u9ZpiVP3xbaLG" />
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>DefaultFileTemplate</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lfy\IdeaProjects\spring-boot-04-web-restfulcrud\src\main\resources\templates\error" />
+      <recent name="C:\Users\lfy\IdeaProjects\spring-boot-04-web-restfulcrud\src\main\resources\templates\emp" />
+      <recent name="C:\Users\lfy\IdeaProjects\spring-boot-04-web-restfulcrud\src\main\resources\templates" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lfy\IdeaProjects\spring-boot-04-web-restfulcrud\src\main\resources\templates\error" />
+      <recent name="C:\Users\lfy\IdeaProjects\spring-boot-04-web-restfulcrud\src\main\resources\static" />
+      <recent name="C:\Users\lfy\IdeaProjects\spring-boot-04-web-restfulcrud\src\main\resources\templates\emp" />
+      <recent name="C:\Users\lfy\IdeaProjects\spring-boot-04-web-restfulcrud\src\main\resources\templates" />
+      <recent name="C:\Users\lfy\IdeaProjects\spring-boot-04-web-restfulcrud\src\main\java\com\atguigu\springboot" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBoot04WebRestfulcrudApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-04-web-restfulcrud" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.springboot.SpringBoot04WebRestfulcrudApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5b1fb5d7-ef1c-4197-bc2a-5d6f478edd1a" name="Default" comment="" />
+      <created>1517644600729</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1517644600729</updated>
+      <workItem from="1517644603396" duration="13087000" />
+      <workItem from="1517659274080" duration="9468000" />
+      <workItem from="1517710444108" duration="18062000" />
+      <workItem from="1517740262180" duration="9413000" />
+      <workItem from="1517796361838" duration="26103000" />
+      <workItem from="1517881840012" duration="6020000" />
+      <workItem from="1518320304494" duration="14287000" />
+      <workItem from="1518415836047" duration="10600000" />
+      <workItem from="1519525489645" duration="25296000" />
+      <workItem from="1519608962571" duration="188000" />
+      <workItem from="1519609719945" duration="12108000" />
+      <workItem from="1519637395058" duration="8147000" />
+      <workItem from="1519783381508" duration="18906000" />
+      <workItem from="1519872518069" duration="10299000" />
+      <workItem from="1519891111050" duration="672000" />
+      <workItem from="1519891816223" duration="1145000" />
+      <workItem from="1519952856308" duration="19557000" />
+      <workItem from="1519988168569" duration="131000" />
+      <workItem from="1605253754415" duration="364000" />
+      <workItem from="1605254640362" duration="1021000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="426" y="200" key="FileChooserDialogImpl" timestamp="1605255355589">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="426" y="200" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605255355589" />
+    <state width="1242" height="163" key="GridCell.Tab.0.bottom" timestamp="1605255667809">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1242" height="163" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605255667809" />
+    <state width="1242" height="163" key="GridCell.Tab.0.center" timestamp="1605255667809">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1242" height="163" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605255667809" />
+    <state width="1242" height="163" key="GridCell.Tab.0.left" timestamp="1605255667809">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1242" height="163" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605255667809" />
+    <state width="1242" height="163" key="GridCell.Tab.0.right" timestamp="1605255667809">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1242" height="163" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605255667809" />
+    <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1605255622888">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="299" y="67" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1605255622888" />
+    <state x="147" y="90" key="SettingsEditor" timestamp="1605255362298">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="147" y="90" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605255362298" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.5.10.RELEASE/spring-boot-autoconfigure-1.5.10.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.14.RELEASE/spring-context-4.3.14.RELEASE-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java</url>
+          <line>539</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/1.5.10.RELEASE/spring-boot-1.5.10.RELEASE-sources.jar!/org/springframework/boot/context/embedded/tomcat/TomcatEmbeddedServletContainerFactory.java</url>
+          <line>162</line>
+          <properties class="org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory" method="getEmbeddedServletContainer">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

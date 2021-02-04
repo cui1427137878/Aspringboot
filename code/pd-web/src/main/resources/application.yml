@@ -1,0 +1,6 @@
+server:
+  port: 80
+
+resources: # 指定静态资源的路径
+        static-locations: classpath:/
+        cache-period: 0

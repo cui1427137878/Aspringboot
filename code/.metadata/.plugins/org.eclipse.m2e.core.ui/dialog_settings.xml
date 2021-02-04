@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="D:\classproject\2007code3\mybatis04_plus\src\main\java\com\example\mybatis04_plus\controller\CategoryController.java"/>
+			<item value="D:\classproject\2007code3\maven02_www\pom.xml"/>
+			<item value="D:\classproject\2007code3\maven02_user"/>
+			<item value="D:\classproject\2007code3\maven01_test\src\main\java\com\tedu\maven01_test\App.java"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="internal"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="com.tedu.Testlombok"/>
+			<item value="com.tedu.maven03_test"/>
+			<item value="com.tedu.maven02_parent"/>
+			<item value="com.tedu.maven02_www"/>
+			<item value="com.tedu.maven02_item"/>
+			<item value="com.tedu.maven02_user"/>
+			<item value="com.tedu.maven01_test"/>
+		</list>
+		<list key="groupId">
+			<item value="com.tedu"/>
+		</list>
+		<list key="artifactId">
+			<item value="Testlombok"/>
+			<item value="maven03_test"/>
+			<item value="maven02_parent"/>
+			<item value="maven02_www"/>
+			<item value="maven02_item"/>
+			<item value="maven02_user"/>
+			<item value="maven01_test"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item key="width" value="504"/>
+		<item key="height" value="837"/>
+		<item key="x" value="1195"/>
+		<item key="y" value="119"/>
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="D:\classproject\2007code3\mybatis04_plus"/>
+			<item value="D:\classproject\2007code3\mybatis03_dynamicsql"/>
+			<item value="D:\classproject\2007code3\springaop06_aop"/>
+			<item value="D:\classproject\2007code3\springioc01_userService"/>
+			<item value="D:\classproject\2007code3\springmvc11_page"/>
+			<item value="D:\classproject\2007code3\springmvc10_jsp"/>
+			<item value="D:\classproject\2007code3\springmvc09_item"/>
+			<item value="D:\classproject\pd-web源代码"/>
+			<item value="D:\classproject\2007code3\springmvc06_session"/>
+			<item value="D:\classproject\2007code3\springmvc05_cookie"/>
+			<item value="D:\classproject\2007code3\springmvc01_base"/>
+			<item value="D:\classproject\2007code3\sp03_sms"/>
+			<item value="D:\classproject\2007code3\sp01_test"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>

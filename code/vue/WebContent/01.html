@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div id="app">内容不能为空</div>
+</body>
+<script type="text/javascript">
+	//架构师写的框架
+	//options是配置对象 {el}
+	//Vue是个类。
+	function Vue(options) {
+		//从配置对象中找到根标签id
+		var rootElementId = options.el;
+		//根据id得到对象
+		var rootObject = document.getElementById(rootElementId);
+		//设置背景色	
+		rootObject.style.backgroundColor = "#FF0000";
+	}
+	//------------------------
+	//程序用框架
+	//写个配置信息
+	var options = {
+		el : "app"
+	}
+	//启动框架
+	var vue = new Vue(options);
+</script>
+</html>

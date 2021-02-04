@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="webspring:war">
+    <output-path>$PROJECT_DIR$/../webspring/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>webspring</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="webspring-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="webspring:war exploded" />
+    </root>
+  </artifact>
+</component>

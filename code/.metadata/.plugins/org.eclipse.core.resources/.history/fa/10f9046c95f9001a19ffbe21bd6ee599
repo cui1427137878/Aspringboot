@@ -1,0 +1,14 @@
+package com.tedu.mybatis02_multiTable.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.tedu.mybatis02_multiTable.mapper.CategoryMapper;
+
+@RestController
+public class CategoryController {
+	
+	@Autowired
+	CategoryMapper categoryMapper;
+
+}

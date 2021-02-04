@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="vue.js" type="text/javascript"></script>
+		<script src="axios.min.js" type="text/javascript"></script>
+		<script src="const.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div id="app">
+			商品分类<select v-model="categoryId">
+				<option v-for="category in categoryList" v-bind:value="category.categoryId">
+					{{category.categoryName}}
+				</option>
+
+			</select><br>
+			商品名称:<input v-model="itemName" /><br>
+			商品价格:<input v-model="itemPrice" /><br>
+			商品描述:<input v-model="itemDesc" /><br>
+			商品图片:<input v-model="itemImage" /><br>
+			<button v-on:click="insert">添加</button>
+
+			<table width="100%">
+				<tr v-for="item in itemList">
+					<td>{{item.itemId}}</td>
+					<td>{{item.itemName}}</td>
+					<td>{{item.itemDesc}}</td>
+					<td>{{item.itemPrice}}</td>
+					<td v-on:click="deleteItem(item.itemId)">删除</td>
+					<td>修改</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var options = {
+			el: "#app",
+			mounted: function() {
+				debugger;
+				this.selectAllCategory();
+				this.selectAllItem();
+			},
+			methods: {
+				deleteItem: function(itemId) {
+					var vue = this;
+					//前端有确认,后端数据库执行update isDelete=true
+					var confirm = window.confirm("你真的要删除吗?")
+					if (confirm == true) {
+						var serverUrl = serverAddress + "/item/delete" +
+							"?itemId=" + itemId;
+						axios.get(serverUrl)
+							.then(function(response) {
+								debugger;
+								if (response.data.state == 0) {
+									//更新界面
+									vue.selectAllItem();
+								}
+							})
+							.catch(function(e) {
+								debugger;
+							});
+					}
+				},
+				selectAllItem: function() {
+					debugger;
+					var vue = this;
+					var serverUrl = serverAddress + "/item/selectAll";
+					axios.get(serverUrl)
+						.then(function(response) {
+							debugger;
+							vue.itemList = response.data.data;
+						})
+						.catch(function(e) {
+							debugger;
+							console.log(e);
+						});
+				},
+				insert: function() {
+					debugger;
+					var serverUrl = serverAddress + "/item/insert" +
+						"?itemName=" + this.itemName +
+						"&itemPrice=" + this.itemPrice +
+						"&itemDesc=" + this.itemDesc +
+						"&itemImage=" + this.itemImage +
+						"&categoryId=" + this.categoryId;
+					var vue = this;
+					axios.get(serverUrl)
+						.then(function(response) {
+							debugger;
+							if (response.data.state == 0) {
+								window.alert("添加成功");
+								//更新界面，重新查询所有商品
+								vue.selectAllItem();
+							}
+						})
+						.catch(function(e) {
+							window.alert("添加失败");
+							console.log(e);
+						});
+
+				},
+				selectAllCategory: function() {
+					var vue = this;
+					var serverUrl = serverAddress + "/cat/selectAll";
+					axios.get(serverUrl)
+						.then(function(response) {
+							debugger;
+							//判断state==0
+							vue.categoryList = response.data.data;
+						})
+						.catch(function() {
+							debugger;
+							console.log(e);
+						});
+				}
+			},
+			data: {
+				itemList: [],
+				categoryId: null,
+				categoryList: [],
+				itemName: "",
+				itemPrice: "",
+				itemDesc: "",
+				itemImage: ""
+			}
+		}
+		var vue = new Vue(options);
+	</script>
+</html>

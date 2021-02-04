@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="vue.js"></script>
+<script type="text/javascript" src="axios.min.js"></script>
+</head>
+<body>
+	<div id="app">
+	<input v-model="newItemName">
+	<button v-on:click="update">修改</button>		
+	</div>
+</body>
+<script type="text/javascript">
+var config={
+		el:"#app",
+		data:{
+			oldItemName:null,
+			newItemName:null
+		},
+		mounted:function(){
+			debugger;
+			//接收商品名称
+			//update.html?oldItemName=手机
+			//location代表的是浏览器的地址栏
+			var search=location.search;//?oldItemName=手机	
+			search=search.substr(1)//取子串 oldItemName=手机
+			var array=search.split("=");//array[0]=oldItemName,array[1]=手机
+			this.oldItemName=array[1];
+			this.newItemName=this.oldItemName;
+			//F12 F10向下一行,F8不跟了
+		},
+		methods:{
+			update:function(){
+				debugger;
+				var serverUrl="/update?oldItemName="+this.oldItemName
+						+"&newItemName="+this.newItemName;
+				axios.get(serverUrl)
+				.then(function(res){
+					debugger;
+					var result=res.data;
+					window.alert(result);
+				})
+				.catch();
+			}
+		}
+}
+//启动vue
+var vue=new Vue(config);
+</script>
+</html>

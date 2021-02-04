@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="vue.js"></script>
+<script type="text/javascript" src="axios.min.js"></script>
+</head>
+<body>
+	<h1>主站</h1>
+	<div id="app">
+		<table>
+			<tr v-for="item in itemList">
+				<td>{{item}}</td>
+			</tr>
+		</table>
+	</div>
+</body>
+<script type="text/javascript">
+	var config={
+			el:"#app",
+			data:{itemList:[]},
+			mounted:function(){
+				//网页加载完后自动执行
+				//methods:{}放函数
+				debugger;
+				this.selectAll();
+			},
+			methods:{
+				selectAll:function(){
+					debugger;
+					var serverUrl="/select";
+					axios.get(serverUrl)
+					.then(function (res){
+						debugger;
+						var result=res.data;
+						//赋值给data中的itemList
+						this.vue.itemList=result;
+					})
+					.catch();
+				}
+				
+			}
+	}
+	//启动vue框架
+	var vue=new Vue(config);
+	//admin.html添加一个商品
+	//index.html  F12 console看一下有没有语法错误
+	//mounted-->selectAll--->then
+</script>
+</html>

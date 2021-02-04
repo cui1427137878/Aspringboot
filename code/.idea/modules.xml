@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CGB-MYBATIS-03/CGB-MYBATIS-03.iml" filepath="$PROJECT_DIR$/CGB-MYBATIS-03/CGB-MYBATIS-03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SocketServer/SocketServer.iml" filepath="$PROJECT_DIR$/SocketServer/SocketServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StackOOM/StackOOM.iml" filepath="$PROJECT_DIR$/StackOOM/StackOOM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/daili/daili.iml" filepath="$PROJECT_DIR$/daili/daili.iml" />
+      <module fileurl="file://$PROJECT_DIR$/httpServer/httpServer.iml" filepath="$PROJECT_DIR$/httpServer/httpServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaThreadDownloader/javaThreadDownloader.iml" filepath="$PROJECT_DIR$/javaThreadDownloader/javaThreadDownloader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jt-mall/jt-mall.iml" filepath="$PROJECT_DIR$/jt-mall/jt-mall.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jvm/jvm.iml" filepath="$PROJECT_DIR$/jvm/jvm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/metaSpace/metaSpace.iml" filepath="$PROJECT_DIR$/metaSpace/metaSpace.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nettyWebServer/myNetty.iml" filepath="$PROJECT_DIR$/nettyWebServer/myNetty.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatisFramework2004/mybatisFramework2004.iml" filepath="$PROJECT_DIR$/mybatisFramework2004/mybatisFramework2004.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nio/nio.iml" filepath="$PROJECT_DIR$/nio/nio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/observer/observer.iml" filepath="$PROJECT_DIR$/observer/observer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pd-web/pd-web.iml" filepath="$PROJECT_DIR$/pd-web/pd-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/socketCreateHttpRequest/socketCreateHttpRequest.iml" filepath="$PROJECT_DIR$/socketCreateHttpRequest/socketCreateHttpRequest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springAop2004/springAop2004.iml" filepath="$PROJECT_DIR$/springAop2004/springAop2004.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-ssm/springboot-ssm.iml" filepath="$PROJECT_DIR$/springboot-ssm/springboot-ssm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springioc2004/springioc2004.iml" filepath="$PROJECT_DIR$/springioc2004/springioc2004.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springmvcFramework2004/springmvcFramework2004.iml" filepath="$PROJECT_DIR$/springmvcFramework2004/springmvcFramework2004.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="vue.js"></script>
+<script type="text/javascript" src="axios.min.js"></script>
+
+</head>
+<body>
+	<div id="app">
+		<table>
+			<tr v-for="item in itemList">
+				<td>{{item.itemName}}:{{item.itemPrice}}</td>
+			</tr>
+		</table>
+	</div>
+
+</body>
+<script type="text/javascript">
+//定义配置对象
+var config={
+		el:"#app",
+		data:{
+			itemList:[]
+			},
+		mounted:function(){
+			debugger;
+			var serverUrl="/list";
+			axios.get(serverUrl)
+			.then(function(response){
+				debugger;
+				//response中有多个属性
+				var result=response.data;
+				//把服务器返回的list赋值给data中的itemList
+				this.vue.itemList=result;
+			})
+			.catch(function(e){
+				window.alert("联网失败了");
+				console.log(e);
+			});
+		}
+}
+//启动vue
+var vue=new Vue(config);
+</script>
+</html>
+
+
+

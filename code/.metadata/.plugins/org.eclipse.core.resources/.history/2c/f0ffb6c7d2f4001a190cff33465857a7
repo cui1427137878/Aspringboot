@@ -1,0 +1,14 @@
+package org.springmvc;
+
+public class Main {
+
+	public static void main(String[] args) {
+		//com.tedu是个文件夹，通过java.io.File.listFiles()
+		//com/tedu/ItemController -->com.tedu.ItemController
+		String[] classNames= {"com.tedu.UserController",
+				"com.tedu.ItemController"};
+//自动访问所有类的私有属性
+		//自动执行所有类的方法
+	}
+
+}

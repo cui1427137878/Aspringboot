@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springboot-login" />
+        <module name="springmybatis" />
+        <module name="aop-asped" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="aop-asped" target="1.7" />
+      <module name="blibli-springboot003-web" target="1.8" />
+      <module name="shangcheng-spring" target="1.8" />
+      <module name="springboot-login" target="1.8" />
+      <module name="springmybatis" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="blibli-springboot003-web" options="-parameters" />
+      <module name="springboot-login" options="-parameters" />
+    </option>
+  </component>
+</project>

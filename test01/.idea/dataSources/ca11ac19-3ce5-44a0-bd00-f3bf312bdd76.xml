@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL for 5.1 - a@localhost">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.19">
+    <root id="1">
+      <ServerVersion>5.0.45</ServerVersion>
+      <DefaultCasing>lower/lower</DefaultCasing>
+    </root>
+    <schema id="2" parent="1" name="a">
+      <Current>1</Current>
+    </schema>
+    <schema id="3" parent="1" name="alla"/>
+    <schema id="4" parent="1" name="db"/>
+    <schema id="5" parent="1" name="db_tedustore"/>
+    <schema id="6" parent="1" name="db_vote_system"/>
+    <schema id="7" parent="1" name="guoke2"/>
+    <schema id="8" parent="1" name="information_schema"/>
+    <schema id="9" parent="1" name="mydb2"/>
+    <schema id="10" parent="1" name="mysql"/>
+    <schema id="11" parent="1" name="planegame"/>
+    <schema id="12" parent="1" name="shopping"/>
+    <schema id="13" parent="1" name="spj"/>
+    <schema id="14" parent="1" name="unversity"/>
+    <schema id="15" parent="1" name="xskc"/>
+    <schema id="16" parent="1" name="第三"/>
+    <table id="17" parent="2" name="coure"/>
+    <table id="18" parent="2" name="j"/>
+    <table id="19" parent="2" name="p"/>
+    <table id="20" parent="2" name="s"/>
+    <table id="21" parent="2" name="spj"/>
+    <table id="22" parent="2" name="table_name"/>
+    <column id="23" parent="17" name="cno">
+      <Position>1</Position>
+      <DataType>INT(10)|4s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="24" parent="17" name="cname">
+      <Position>2</Position>
+      <DataType>CHAR(20)|1s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="25" parent="17" name="cpno">
+      <Position>3</Position>
+      <DataType>INT(10)|4s</DataType>
+    </column>
+    <column id="26" parent="17" name="ccredit">
+      <Position>4</Position>
+      <DataType>INT(10)|4s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="27" parent="17" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>cno</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="28" parent="17" name="so">
+      <ColNames>cno</ColNames>
+    </index>
+    <key id="29" parent="17" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>cno</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="30" parent="18" name="jno">
+      <Position>1</Position>
+      <DataType>CHAR(10)|1s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="31" parent="18" name="jname">
+      <Position>2</Position>
+      <DataType>CHAR(20)|1s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="32" parent="18" name="city">
+      <Position>3</Position>
+      <DataType>CHAR(10)|1s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <index id="33" parent="18" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>jno</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="34" parent="18" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>jno</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="35" parent="19" name="pno">
+      <Position>1</Position>
+      <DataType>CHAR(10)|1s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="36" parent="19" name="pname">
+      <Position>2</Position>
+      <DataType>CHAR(20)|1s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="37" parent="19" name="color">
+      <Position>3</Position>
+      <DataType>CHAR(10)|1s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="38" parent="19" name="weight">
+      <Position>4</Position>
+      <DataType>CHAR(10)|1s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <index id="39" parent="19" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>pno</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="40" parent="19" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>pno</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="41" parent="20" name="sno">
+      <Position>1</Position>
+      <DataType>CHAR(10)|1s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="42" parent="20" name="sname">
+      <Position>2</Position>
+      <DataType>CHAR(20)|1s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="43" parent="20" name="status">
+      <Position>3</Position>
+      <DataType>CHAR(10)|1s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="44" parent="20" name="city">
+      <Position>4</Position>
+      <DataType>CHAR(10)|1s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <index id="45" parent="20" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>sno</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="46" parent="20" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>sno</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="47" parent="21" name="sno">
+      <Position>1</Position>
+      <DataType>CHAR(10)|1s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="48" parent="21" name="pno">
+      <Position>2</Position>
+      <DataType>CHAR(10)|1s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="49" parent="21" name="jno">
+      <Position>3</Position>
+      <DataType>CHAR(10)|1s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="50" parent="21" name="qty">
+      <Position>4</Position>
+      <DataType>CHAR(10)|1s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="51" parent="21" name="s_enter">
+      <Position>5</Position>
+      <DataType>VARCHAR(20)|12s</DataType>
+    </column>
+    <index id="52" parent="21" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>sno
+pno
+jno</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="53" parent="21" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>sno
+pno
+jno</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="54" parent="22" name="第一次">
+      <Position>1</Position>
+      <DataType>VARCHAR(20)|12s</DataType>
+    </column>
+    <column id="55" parent="22" name="66666">
+      <Position>2</Position>
+      <DataType>INT(10)|4s</DataType>
+    </column>
+    <column id="56" parent="22" name="第二次">
+      <Position>3</Position>
+      <DataType>VARCHAR(20)|12s</DataType>
+    </column>
+  </database-model>
+</dataSource>

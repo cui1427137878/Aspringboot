@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b15827b0-6d0c-493e-96ae-6b993d28994c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\repository" />
+        <option name="mavenHome" value="E:\idea\IntelliJ IDEA 2020.2\plugins\maven\lib\maven3" />
+        <option name="userSettingsFile" value="F:\qq接受\Maven\apache-maven-3.3.9\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadAnnotationsAutomatically" value="true" />
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1jr4u5Bfu7H0M2oSH07doTQGlro" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/blibli-springboot003-web" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.BlibliSpringbootYamlApplicationTests">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BlibliSpringbootYamlApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="blibli-springboot-yaml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tedu.bliblispringbootyaml.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tedu.bliblispringbootyaml" />
+      <option name="MAIN_CLASS_NAME" value="com.tedu.bliblispringbootyaml.BlibliSpringbootYamlApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BlibliSpringbootYamlApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="blibli-springboot-yaml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tedu.bliblispringbootyaml.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tedu.bliblispringbootyaml" />
+      <option name="MAIN_CLASS_NAME" value="com.tedu.bliblispringbootyaml.BlibliSpringbootYamlApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="002-spingboot-springmvc" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tedu.spingbootspringmvc.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="003-spingboot-context-path" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tedu.cn.spingbootcontextpath.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application (3)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="004-spingboot-application1" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tedu.spingbootapplication1.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application (4)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="006-springboot-environment" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tedu.cn.springbootenvironment.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application (5)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="008-springboot-custom" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tedu.cn.springbootcustom.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application (6)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="009-springboot-cosfiguration" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tedu.cn.springbootcosfiguration.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application (7)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="010-springboot-jsp" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tedu.cn.springbootjsp.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="001-springboot" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tedu.springboot.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BlibliSpringboot003WebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="blibli-springboot003-web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.bliblispringbootweb.BlibliSpringboot003WebApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BlibliSpringbootYamlApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="blibli-springboot-yaml" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tedu.bliblispringbootyaml.BlibliSpringbootYamlApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="testss" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Springboot01Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot01" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tedu.springboot01.Springboot01Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BlibliSpringbootYamlApplicationTests" />
+        <item itemvalue="JUnit.BlibliSpringbootYamlApplicationTests.contextLoads" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b15827b0-6d0c-493e-96ae-6b993d28994c" name="Default Changelist" comment="" />
+      <created>1604549097125</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604549097125</updated>
+      <workItem from="1604549098192" duration="5143000" />
+      <workItem from="1604576769333" duration="1681000" />
+      <workItem from="1604653942672" duration="1114000" />
+      <workItem from="1604712494945" duration="10675000" />
+      <workItem from="1604737726662" duration="595000" />
+      <workItem from="1604884883182" duration="12205000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="395" y="91" key="#Inspections" timestamp="1604556674290">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="395" y="91" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1604556674290" />
+    <state x="231" y="0" key="#Project_Structure" timestamp="1604549132244">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="231" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1604549132244" />
+    <state x="958" y="99" key="#com.intellij.ide.util.MemberChooser" timestamp="1604903271445">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="958" y="99" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1604903271445" />
+    <state x="794" y="319" key="#com.intellij.javaee.module.view.web.EditWebRootDialog" timestamp="1604720730957">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="794" y="319" key="#com.intellij.javaee.module.view.web.EditWebRootDialog/0.0.1536.824@0.0.1536.824" timestamp="1604720730957" />
+    <state x="841" y="87" key="FileChooserDialogImpl" timestamp="1604912887132">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="841" y="87" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604912887132" />
+    <state width="1348" height="118" key="GridCell.Tab.0.bottom" timestamp="1604912889512">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1348" height="118" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604912889512" />
+    <state width="1348" height="118" key="GridCell.Tab.0.center" timestamp="1604912889512">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1348" height="118" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604912889512" />
+    <state width="1348" height="118" key="GridCell.Tab.0.left" timestamp="1604912889512">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1348" height="118" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604912889512" />
+    <state width="1348" height="118" key="GridCell.Tab.0.right" timestamp="1604912889512">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1348" height="118" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604912889512" />
+    <state width="684" height="208" key="GridCell.Tab.1.bottom" timestamp="1604729862629">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="684" height="208" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604729862629" />
+    <state width="684" height="208" key="GridCell.Tab.1.center" timestamp="1604729862629">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="684" height="208" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1604729862629" />
+    <state width="684" height="208" key="GridCell.Tab.1.left" timestamp="1604729862629">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="684" height="208" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1604729862629" />
+    <state width="684" height="208" key="GridCell.Tab.1.right" timestamp="1604729862629">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="684" height="208" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1604729862629" />
+    <state width="1027" height="165" key="GridCell.Tab.2.bottom" timestamp="1604718204783">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1027" height="165" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604718204783" />
+    <state width="1027" height="165" key="GridCell.Tab.2.center" timestamp="1604718204783">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1027" height="165" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1604718204783" />
+    <state width="1027" height="165" key="GridCell.Tab.2.left" timestamp="1604718204783">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1027" height="165" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1604718204783" />
+    <state width="1027" height="165" key="GridCell.Tab.2.right" timestamp="1604718204783">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1027" height="165" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1604718204783" />
+    <state x="535" y="168" key="IDE.errors.dialog" timestamp="1604557025214">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="535" y="168" key="IDE.errors.dialog/0.0.1536.824@0.0.1536.824" timestamp="1604557025214" />
+    <state x="0" y="134" key="Maven.ArtifactSearchDialog" timestamp="1604911126877">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="0" y="134" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1604911126877" />
+    <state x="84" y="0" width="1300" height="824" key="SettingsEditor" timestamp="1604909035376">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="84" y="0" width="1300" height="824" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1604909035376" />
+    <state x="790" y="103" width="671" height="613" key="new project wizard" timestamp="1604912771884">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="790" y="103" width="671" height="613" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1604912771884" />
+  </component>
+</project>

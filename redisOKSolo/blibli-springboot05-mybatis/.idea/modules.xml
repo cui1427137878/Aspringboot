@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../bibli-springboot07-shiro/bibli-springboot07-shiro.iml" filepath="$PROJECT_DIR$/../bibli-springboot07-shiro/bibli-springboot07-shiro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/blibli-springboot05-mybatis.iml" filepath="$PROJECT_DIR$/.idea/blibli-springboot05-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../blibli-springboot06-security/blibli-springboot06-security.iml" filepath="$PROJECT_DIR$/../blibli-springboot06-security/blibli-springboot06-security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../blibli-springboot07-swagger/blibli-springboot07-swagger.iml" filepath="$PROJECT_DIR$/../blibli-springboot07-swagger/blibli-springboot07-swagger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../swaggertest/swaggertest.iml" filepath="$PROJECT_DIR$/../swaggertest/swaggertest.iml" />
+    </modules>
+  </component>
+</project>

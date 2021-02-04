@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0c26aed0-a8d5-4a3b-b038-46eb42e214e3" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\repository" />
+        <option name="mavenHome" value="E:\idea\IntelliJ IDEA 2020.2\plugins\maven\lib\maven3" />
+        <option name="userSettingsFile" value="F:\Maven\apache-maven-3.3.9\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1jXcRXHAnn7u5uM7QqtfMOVjVGC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../springbootproject/blibli-springboot-yaml" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aop-asped" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ba01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ba01" />
+      <option name="MAIN_CLASS_NAME" value="ba01.MyTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MyTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0c26aed0-a8d5-4a3b-b038-46eb42e214e3" name="Default Changelist" comment="" />
+      <created>1603953871245</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603953871245</updated>
+      <workItem from="1603953872404" duration="29000" />
+      <workItem from="1605505915946" duration="84000" />
+      <workItem from="1605506016758" duration="34000" />
+      <workItem from="1605506080449" duration="7000" />
+      <workItem from="1605506117030" duration="6000" />
+      <workItem from="1605512968019" duration="1585000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="637" y="179" key="FileChooserDialogImpl" timestamp="1605515747152">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="637" y="179" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605515747152" />
+    <state width="1493" height="195" key="GridCell.Tab.0.bottom" timestamp="1605515843518">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="195" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605515843518" />
+    <state width="1493" height="195" key="GridCell.Tab.0.center" timestamp="1605515843518">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="195" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605515843518" />
+    <state width="1493" height="195" key="GridCell.Tab.0.left" timestamp="1605515843518">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="195" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605515843518" />
+    <state width="1493" height="195" key="GridCell.Tab.0.right" timestamp="1605515843518">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605515843518" />
+    <state x="409" y="114" key="SettingsEditor" timestamp="1605513781151">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="409" y="114" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605513781151" />
+    <state x="593" y="278" width="627" height="398" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1605513779859">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="593" y="278" width="627" height="398" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1536.824@0.0.1536.824" timestamp="1605513779859" />
+  </component>
+</project>

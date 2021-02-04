@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var $refs = new Object();
+	//动态给$refs添加属性
+	$refs.itemTitle = new Object();
+	$refs.itemTitle.value = "手机"
+	console.log($refs.itemTitle.value);
+
+	//从数组中删除数据
+	var items = [ "item1", "item2", "item3" ];
+	items.splice(1, 1);//item2,item3
+	console.log(items);
+</script>
+</head>
+<body>
+
+</body>
+</html>

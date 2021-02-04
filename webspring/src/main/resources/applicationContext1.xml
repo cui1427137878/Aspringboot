@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+  <context:annotation-config></context:annotation-config>
+    <context:component-scan base-package="com.service"></context:component-scan>
+    <context:component-scan base-package="com.dao"></context:component-scan>
+
+    <context:property-placeholder location="classpath:db.properties"></context:property-placeholder>
+    <!--
+        <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+            <property name="driverClass" value="${datasource.connection.driver_class}"/>
+            <property name="jdbcUrl" value="${datasource.connection.url}"/>
+            <property name="user" value="${datasource.connection.username}"/>
+            <property name="password" value="${datasource.connection.password}"/>
+        </bean>
+    -->
+    <!--
+        1.声明数据源,data
+        2.声明工厂，注入数据源
+        3.扫描实体类和操作的.xml
+        4.扫描Dao包
+    -->
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource"
+          init-method="init" destroy-method="close">
+    <!-- 数据库基本信息配置 -->
+    <property name="url" value="jdbc:mysql://localhost:3306/a" />
+    <property name="username" value="root" />
+    <property name="password" value="cjx990725" />
+    </bean>
+    <!--声明工厂
+     typeAliasesPackage：它一般对应我们的实体类所在的包，这个时候会自动取对应包中不包括包名的简单类名作为包括包名的别名。
+     多个package之间可以用逗号或者分号等来进行分隔（value的值一定要是包的全）.
+     mapperLocations：它表示我们的Mapper文件存放的位置，当我们的Mapper文件跟对应的Mapper接口处于同一位置的时候可以不用指定该属性的值-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"></property>
+        <property name="typeAliasesPackage" value="domain"></property>
+        <property name="mapperLocations" value="classpath:xml/*.xml"></property>
+      <!--<property name="configLocation" value="classpath:mybatis.xml"></property>-->
+      <!--创建Dao对象-->
+    </bean>
+   <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+      <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
+      <property name="basePackage" value="com.dao"></property>
+   </bean>
+</beans>

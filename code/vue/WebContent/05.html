@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<button onclick="insert()">insert</button>
+	<div id=app></div>
+</body>
+<script type="text/javascript">
+	//框架
+	function Vue(options) {
+		//找到根元素的id
+		var rootElementId = options.el;
+		//根据id得到对象
+		var rootObject = document.getElementById(rootElementId);
+		//从配置对象中取到商品数据
+		var items = options.data.items;
+		//每隔1秒钟更新界面
+		function run() {
+			//清除根元素的数据
+			rootObject.innerHTML = "";
+
+			//遍历商品数据，显示在根元素上
+			for (var i = 0; i < items.length; i++) {
+				var title = items[i].title;
+				rootObject.innerHTML = rootObject.innerHTML + title + "</br>"
+			}
+		}
+		window.setInterval(run, 1000);
+	}
+	//------------------------------
+	//程序员用框架
+	var options = {
+		el : "app",
+		data : {
+			items : [ {
+				title : "item1"
+			}, {
+				title : "item2"
+			} ]
+		}
+	}
+	var vue = new Vue(options);
+
+	function insert() {
+		//创建商品
+		var item = {
+			title : "新商品"
+		};
+		//把商品放到options.data.items数组中，框架会自动更新界面
+		//items[0],[1] 
+		//length=2  items[length]=item;
+		var length = options.data.items.length;
+		options.data.items[length] = item;
+	}
+</script>
+</html>

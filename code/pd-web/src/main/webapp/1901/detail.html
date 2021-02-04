@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="../css/bootstrap.css" 
+rel="stylesheet"
+type="text/css"
+>
+
+</head>
+<body>
+<div class="container" id="app">
+     <div class=row>
+         <div class=col-xs-12>
+          <a href="index.html">
+                               返回
+          </a>
+         </div>
+     </div>
+     <div class=row>
+        <div class=col-xs-12>
+        <img v-bind:src="item.image">
+        <br/>
+        <span>{{item.title}}</span>
+        <br/>
+        <div v-html="item.desc"></div>
+        </div>
+     </div>
+</div>
+</body>
+<script type="text/javascript" 
+src="../js/util.js"
+>
+</script>
+<script type="text/javascript"
+src="../js/vue.js"
+></script>
+
+<script type="text/javascript"
+src="../js/axios.min.js"
+></script>
+
+<script type="text/javascript">
+	//跳到detal.html 地址栏显示的是 detail.html?itemId=1
+	//?itemId=1&username=root
+	//模拟实现map
+	//var map = new Array();
+	//map["itemId"]=1;
+	//map["username"]="root";
+	//console.log(map["username"]);
+	var map=getParamMap();
+	var itemId=map.get("itemId");
+	var username=map.get("username");
+	console.log(itemId+","+username);
+	var options={
+			"el":"#app",
+			"data":{item:null},
+			"mounted":function()
+			{
+				var url="/api/getItemDetail"
+				+"?itemId="+itemId;
+				axios.get(url)
+				.then(function(response){
+					var serverData=response.data;
+					var item=serverData.data;
+					this.vue.item=item;
+				})
+				.catch(function(e){
+					console.log("联网出错了");
+					console.log(e);
+				});
+			}
+	};
+	var vue=new Vue(options);
+</script>
+</html>
+

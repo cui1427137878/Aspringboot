@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	//框架
+	function Vue(options) {
+		//从配置对象中找到函数
+		var mounted = options.mounted;
+		//执行函数
+		window.onload = mounted;
+	}
+	//-----------------------------------
+	//程序员用框架
+	var options = {
+		mounted : function() {
+			console.log("run")
+		}
+	}
+
+	//启动框架
+	var vue = new Vue(options);
+</script>
+</html>
